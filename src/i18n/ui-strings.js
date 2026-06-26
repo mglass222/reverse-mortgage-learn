@@ -1,0 +1,50 @@
+// All non-content UI strings. Korean is first-draft, pending expert review.
+const ui = {
+  siteTitle: { en: 'Reverse Mortgage Guide', ko: '역모기지 가이드' },
+  nav: {
+    chapters: { en: 'Chapters', ko: '챕터' },
+    calculator: { en: 'Calculator', ko: '계산기' },
+  },
+  toggle: { en: '한국어', ko: 'English' },
+  toggleAria: { en: 'Switch language', ko: '언어 전환' },
+  themeToggle: { en: 'Toggle dark mode', ko: '다크 모드 전환' },
+  chapterNotFound: { en: 'Chapter not found.', ko: '챕터를 찾을 수 없습니다.' },
+  emptyHome: { en: 'No chapters yet.', ko: '아직 챕터가 없습니다.' },
+  disclaimer: {
+    en: 'Educational use only. Korean translations are first drafts pending expert review. The calculator gives estimates, not official loan quotes.',
+    ko: '교육용으로만 사용됩니다. 한국어 번역은 전문가 검토 전 초안입니다. 계산기는 공식 대출 견적이 아닌 추정치를 제공합니다.',
+  },
+  calc: {
+    heading: { en: 'HECM Reverse Mortgage Estimator', ko: 'HECM 역모기지 추정 계산기' },
+    age: { en: 'Youngest borrower age', ko: '최연소 차주 나이' },
+    homeValue: { en: 'Home appraised value', ko: '주택 감정가' },
+    existingLiens: { en: 'Existing mortgage / liens', ko: '기존 모기지 / 선순위 담보권' },
+    expectedRate: { en: 'Expected interest rate (incl. margin, %)', ko: '예상금리 (마진 포함, %)' },
+    disbursement: { en: 'Disbursement option', ko: '지급 방식' },
+    optionLump: { en: 'Lump sum', ko: '일시금' },
+    optionTenure: { en: 'Tenure (lifetime)', ko: '종신 (테뉴어)' },
+    optionTerm: { en: 'Term (fixed years)', ko: '기간제 (정해진 연수)' },
+    optionLoc: { en: 'Line of credit', ko: '신용한도' },
+    termYears: { en: 'Term length (years)', ko: '기간 (연수)' },
+    results: { en: 'Results', ko: '결과' },
+    maxClaim: { en: 'Maximum Claim Amount', ko: '최대 청구 금액' },
+    plf: { en: 'Principal Limit Factor', ko: '원금한도 계수 (PLF)' },
+    principalLimit: { en: 'Principal Limit', ko: '원금한도' },
+    upfrontMip: { en: 'Upfront MIP (2%)', ko: '선납 보험료 MIP (2%)' },
+    origFee: { en: 'Origination fee', ko: '개시 수수료' },
+    otherCosts: { en: 'Other closing costs (est.)', ko: '기타 마감 비용 (추정)' },
+    obligations: { en: 'Mandatory obligations', ko: '필수 상환 의무' },
+    netAvailable: { en: 'Net available to borrower', ko: '차주 순수령액' },
+    monthlyPayment: { en: 'Estimated monthly payment', ko: '예상 월 지급액' },
+    lineOfCredit: { en: 'Initial line of credit', ko: '초기 신용한도' },
+    lumpSum: { en: 'Lump sum proceeds', ko: '일시금 수령액' },
+    estimateNote: {
+      en: 'Estimate only — not an official loan quote. Uses representative factors effective 2026.',
+      ko: '추정치일 뿐 공식 대출 견적이 아닙니다. 2026년 기준 대표 계수를 사용합니다.',
+    },
+  },
+  keyTakeaways: { en: 'Key Takeaways', ko: '핵심 요약' },
+  nextChapter: { en: 'Next chapter', ko: '다음 챕터' },
+}
+
+export default ui
