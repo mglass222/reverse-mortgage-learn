@@ -1,5 +1,7 @@
 # Reverse Mortgage Guide (Consumer Edition)
 
+**🔗 Live site: https://mglass222.github.io/reverse-mortgage-learn/**
+
 A plain-language, bilingual (**English ⇄ Korean**) web guide that helps homeowners
 understand whether a U.S. **HECM** reverse mortgage might benefit them — built for
 the Korean community in and around Los Angeles. It includes a simple estimator.
@@ -9,10 +11,11 @@ This is the **consumer edition**, split out from the practitioner-focused
 two audiences stay cleanly separated. It shares that project's engine and design
 system but uses its own plain-language content.
 
-> ⚠️ **Not launched.** Consumer-facing reverse-mortgage marketing is heavily
-> regulated. See [`COMPLIANCE.md`](./COMPLIANCE.md) — this site must clear a
-> compliance/legal review before it goes public. Deployment is intentionally
-> **manual only** (see `.github/workflows/deploy.yml`).
+> ⚠️ **Compliance is the operator's responsibility.** Consumer-facing
+> reverse-mortgage marketing is heavily regulated. The site auto-deploys to
+> GitHub Pages, but the checklist in [`COMPLIANCE.md`](./COMPLIANCE.md) — certified
+> Korean disclosures, a MAP-Rule copy scrub, and legal sign-off — must still be
+> completed for a compliant public launch.
 
 ## Scope & disclaimers
 
@@ -57,10 +60,9 @@ npm run build    # production build to dist/
 | FHA constants (lending limit, MIP rates) | `src/calculator/constants.js` |
 | Representative PLF table | `src/calculator/plf-table.js` |
 
-## Deploying (when cleared for launch)
+## Deployment
 
-1. Complete the `COMPLIANCE.md` review and get sign-off.
-2. Make the repo public (or use another static host) and enable **GitHub Pages →
-   Build and deployment → GitHub Actions**.
-3. Run the **CI / Deploy** workflow manually (Actions → Run workflow). The Vite
-   base path is `/reverse-mortgage-learn/`.
+The site **auto-deploys to GitHub Pages on every push to `main`** (see
+`.github/workflows/deploy.yml`). The Vite base path is `/reverse-mortgage-learn/`.
+Complete the `COMPLIANCE.md` review before relying on it as a public-facing
+marketing site.

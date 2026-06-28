@@ -1,10 +1,5 @@
-name: CI / Deploy
+name: Deploy to GitHub Pages
 
-# CI (test + build) runs on every push. Deployment is MANUAL ONLY for now:
-# the consumer site must clear the compliance review in COMPLIANCE.md before it
-# goes public. To deploy later, make the repo public, enable GitHub Pages
-# (Build and deployment → GitHub Actions), then run this workflow via
-# "Run workflow" (workflow_dispatch).
 on:
   push:
     branches: [main]
@@ -20,7 +15,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  ci:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -31,26 +26,17 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
 
   deploy:
-    # Only when triggered manually — never auto-publishes on push.
-    if: github.event_name == 'workflow_dispatch'
-    needs: ci
+    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
-      - run: npm ci
-      - run: npm run build
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
       - id: deployment
         uses: actions/deploy-pages@v4
