@@ -91,22 +91,20 @@ a { color: inherit; }
   align-items: center;
   justify-content: center;
   gap: 0.55rem;
-  background: var(--surface);
-  color: var(--muted);
+  background: rgba(185, 104, 58, 0.12);
+  color: var(--amber);
   font-family: var(--mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.02em;
-  padding: 0.5rem 1.25rem;
+  font-weight: 500;
+  font-size: 0.7rem;
+  letter-spacing: 0.01em;
+  padding: 0.6rem 1.25rem;
   text-align: center;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid rgba(185, 104, 58, 0.28);
 }
 .disclaimer-banner::before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 0 3px var(--accent-tint);
+  content: "⚠";
+  font-size: 0.85rem;
+  line-height: 1;
   flex: none;
 }
 

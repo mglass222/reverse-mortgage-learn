@@ -11,8 +11,8 @@ const ui = {
   chapterNotFound: { en: 'Chapter not found.', ko: '챕터를 찾을 수 없습니다.' },
   emptyHome: { en: 'No chapters yet.', ko: '아직 챕터가 없습니다.' },
   disclaimer: {
-    en: 'Educational use only. Korean translations are first drafts pending expert review. The calculator gives estimates, not official loan quotes.',
-    ko: '교육용으로만 사용됩니다. 한국어 번역은 전문가 검토 전 초안입니다. 계산기는 공식 대출 견적이 아닌 추정치를 제공합니다.',
+    en: 'Under review — general education only. Do not use this information to make decisions about getting a reverse mortgage. Talk to a HUD-approved counselor.',
+    ko: '검토 중 — 일반 교육용일 뿐입니다. 이 정보를 역모기지 가입 결정에 사용하지 마십시오. HUD 승인 상담사와 상담하세요.',
   },
   calc: {
     heading: { en: 'HECM Reverse Mortgage Estimator', ko: 'HECM 역모기지 추정 계산기' },

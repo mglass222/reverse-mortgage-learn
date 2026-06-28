@@ -1,5 +1,9 @@
 # Reverse Mortgage Guide (Consumer Edition)
 
+> 🚧 **This information is still under review and is for general education only.
+> Do not use it to make decisions about getting a reverse mortgage.** Speak with a
+> HUD-approved counselor, and see [`COMPLIANCE.md`](./COMPLIANCE.md).
+
 **🔗 Live site: https://mglass222.github.io/reverse-mortgage-learn/**
 
 A plain-language, bilingual (**English ⇄ Korean**) web guide that helps homeowners
